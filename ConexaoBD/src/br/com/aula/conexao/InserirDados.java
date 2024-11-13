@@ -13,10 +13,10 @@ public class InserirDados {
 			try {
 				// métodos para inserir nome e idade do aluno
 				System.out.print("Digite o nome do aluno: ");
-                String nome = scanner.nextLine();
+                                String nome = scanner.nextLine();
 
-                System.out.print("Digite a idade do aluno: ");
-                int idade = scanner.nextInt();
+                                System.out.print("Digite a idade do aluno: ");
+                                int idade = scanner.nextInt();
                 
 				PreparedStatement stmt = conexao.prepareStatement(sql); // consulta o código sql para ser executado
 				stmt.setString(1, nome); // coloca no primeiro ponto de interrogação o nome
